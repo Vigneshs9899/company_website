@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images\favicon.png">
+    <title>Equence - Figma</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+    <?php include 'includes/header.php'; ?>
+
+    <div class="container font-Mona Sans max-w-full tracking-wide">
+
+
+        <!-- Hero Section -->
+        <div class="container mx-auto px-6 md:px-12 py-12 md:py-32">
+            <div
+                class="hero flex flex-col md:flex-row justify-center md:justify-between items-center gap-y-12 md:gap-x-16">
+
+                <!-- Hero Text -->
+                <div class="hero_text space-y-6 text-center md:text-left">
+                    <h1 class="text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px]">
+                        Built For Businesses Where A <br> unified CPaaS Dominion <br> Elevates the Synergy of <br>
+                        <span class="text-[#FF4D3D]">Communication</span>
+                    </h1>
+                    <img src="images/underline-body1.png" alt="">
+                    <p class="font-OpenSans text-lg md:text-[21px] font-normal leading-[28px] text-[#545D69]">
+                        Harness our AI-powered CPaaS platform for automated,<br> personalized customer communication,
+                        driving <br> enhanced engagement and business success.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="font-Opensans flex flex-col md:flex-row items-center space-y-4 md:space-x-4">
+                        <button
+                            class="bg-[#5B6BD5] px-8 py-4 rounded-full text-white w-full md:w-auto transform transition-transform duration-300 hover:scale-105">CTA
+                            1</button>
+                        <button class="border-b-2 border-[#FF4D3D] text-[#FF4D3D] w-full md:w-auto">CTA 2</button>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero_image">
+                    <img src="images\Group42181.png" alt=""
+                        class="animate-scale-loop transition-transform transform hover:scale-110 duration-300 w-[600px] h-[300px] md:w-[600px] md:h-[600px] mx-auto md:mx-0">
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Section -->
+
+        <!-- Vector -->
+        <div class="flex justify-center">
+            <img class="w-32 md:w-auto animate-bounce" src="images/Vector14.png" alt="">
+        </div>
+
+        <!-- Solution Section -->
+        <div class="container mx-auto px-6 md:px-12 py-12 md:py-32">
+            <div class="solution text-center">
+                <h1 class="text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px]">Solutions</h1>
+
+                <!-- Cards -->
+                <div class="detail py-12 md:py-32 bg-bottom bg-no-repeat bg-contain bg-[url('images/Frame329.png')]">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <!-- Image 1 -->
+                        <div class="flex justify-center">
+                            <img src="images/Group 42162.png" alt="" class="max-w-full h-auto">
+                        </div>
+
+                        <!-- Image 2 -->
+                        <div class="flex justify-center">
+                            <img src="images/Group 42070.png" alt="" class="max-w-full h-auto">
+                        </div>
+
+                        <!-- Image 3 -->
+                        <div class="flex justify-center">
+                            <img src="images/Group 42067.png" alt="" class="max-w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Solution Section -->
+
+
+
+        <!-- Tabs Section  -->
+
+        <div class="tabs">
+
+            <!-- Tab Content -->
+            <div class="tab_intro flex flex-col md:flex-row items-center justify-center gap-8">
+                <!-- Icon -->
+                <div class="flex justify-center md:justify-end w-full md:w-1/6">
+                    <img src="images/Ellipse153.png" class="motion-safe:animate-ping w-[29px] h-[29px]" alt="">
+                </div>
+
+                <!-- Heading & Content -->
+                <div class="text-center md:text-center space-y-4 w-full md:w-4/6">
+                    <h1 class="text-3xl md:text-[38px] font-bold leading-tight md:leading-[50px]">
+                        Power up Your Business With
+                        <span class="text-[#FF4D3D]">One Comprehensive Suite</span>
+                    </h1>
+                    <p class="text-[18px] text-[#545D69] leading-[23.4px]">
+                        Explore our products that seamlessly integrate into your existing solutions, delivering
+                        exemplary
+                        performance across multiple platforms to bridge the gap between you and your customers with
+                        personalized conversation and successful engagement.
+                    </p>
+                </div>
+
+                <!-- Vector -->
+                <div class="flex justify-center md:justify-start w-full md:w-1/6">
+                    <img src="images/Vector15.png" class="w-[153px] h-[135px]" alt="">
+                </div>
+            </div>
+
+
+
+
+            <!-- Spacer -->
+            <div class="my-12"></div>
+
+            <!-- Tabs and Content Section -->
+            <div class="flex flex-col lg:flex-row justify-center gap-8">
+
+                <!-- Vertical Tabs -->
+                <div class="w-full lg:w-1/4 space-y-4">
+                    <button
+                        class="w-full text-left px-4 py-2 rounded-full hover:bg-[#5B6BD5] hover:text-white focus:outline-none tab-button">
+                        Communication Channels
+                    </button>
+                    <button
+                        class="w-full text-left px-4 py-2 rounded-full hover:bg-[#5B6BD5] hover:text-white focus:outline-none tab-button">
+                        Two Factor Authentication API
+                    </button>
+                    <button
+                        class="w-full text-left px-4 py-2 rounded-full hover:bg-[#5B6BD5] hover:text-white focus:outline-none tab-button">
+                        Omni-channel Programmable API
+                    </button>
+                    <button
+                        class="w-full text-left px-4 py-2 rounded-full hover:bg-[#5B6BD5] hover:text-white focus:outline-none tab-button">
+                        EMD - Equence Message Dispatcher
+                    </button>
+                    <button
+                        class="w-full text-left px-4 py-2 rounded-full hover:bg-[#5B6BD5] hover:text-white focus:outline-none tab-button">
+                        ECM - Equence Campaign Manager
+                    </button>
+                    <button
+                        class="w-full text-left px-4 py-2 rounded-full hover:bg-[#5B6BD5] hover:text-white focus:outline-none tab-button">
+                        Short & Long Code for 2-way Messaging
+                    </button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="w-full lg:w-2/4 p-2 bg-contain bg-center bg-[url('images/Frame330.png')] bg-no-repeat" data-aos="fade-up"
+                data-aos-duration="1000">
+                    <!-- Content for Tabs -->
+                    <div class="tab-content tab-content-1">
+                        <img src="images/Group41992.png" class="mx-auto h-[300px] md:h-[400px] lg:h-[575px] w-auto"
+                            alt="">
+                    </div>
+
+                    <div class="tab-content tab-content-2 hidden">
+                        <img src="images/Group41992.png" class="mx-auto h-[300px] md:h-[400px] lg:h-[575px] w-auto"
+                            alt="">
+                    </div>
+
+                    <div class="tab-content tab-content-3 hidden">
+                        <img src="images/Group41992.png" class="mx-auto h-[300px] md:h-[400px] lg:h-[575px] w-auto"
+                            alt="">
+                    </div>
+
+                    <div class="tab-content tab-content-4 hidden">
+                        <img src="images/Group41992.png" class="mx-auto h-[300px] md:h-[400px] lg:h-[575px] w-auto"
+                            alt="">
+                    </div>
+
+                    <div class="tab-content tab-content-5 hidden">
+                        <img src="images/Group41992.png" class="mx-auto h-[300px] md:h-[400px] lg:h-[575px] w-auto"
+                            alt="">
+                    </div>
+
+                    <div class="tab-content tab-content-6 hidden">
+                        <img src="images/Group41992.png" class="mx-auto h-[300px] md:h-[400px] lg:h-[575px] w-auto"
+                            alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End Tabs -->
+
+
+
+
+        <!-- Client Section -->
+        <div class="container mx-auto px-6 md:px-12 py-12 md:py-32" data-aos="fade-in"
+        data-aos-duration="1000">
+            <!-- Heading -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl text-[#FF4D3D] md:text-[38px] font-bold leading-tight md:leading-[50px]">
+                    Clients
+                </h1>
+            </div>
+
+            <!-- Client Logos -->
+            <div class="flex flex-wrap justify-center gap-8">
+                <img src="images/Group41942.png" class="w-auto h-auto max-w-[160px] max-h-[68px]" alt="Client Logo">
+                <img src="images/Group41940.png" class="w-auto h-auto max-w-[160px] max-h-[68px]" alt="Client Logo">
+                <img src="images/Group41939.png" class="w-auto h-auto max-w-[160px] max-h-[68px]" alt="Client Logo">
+                <img src="images/Group41930.png" class="w-auto h-auto max-w-[160px] max-h-[68px]" alt="Client Logo">
+                <img src="images/Group41929.png" class="w-auto h-auto max-w-[160px] max-h-[68px]" alt="Client Logo">
+                <img src="images/Group41935.png" class="w-auto h-auto max-w-[160px] max-h-[68px]" alt="Client Logo">
+                <img src="images/Group41931.png" class="w-auto h-auto max-w-[160px] max-h-[68px]" alt="Client Logo">
+            </div>
+        </div>
+        <!-- End Client Section -->
+
+
+
+
+
+
+
+        <!-- Trust Section -->
+        <div class="trust-section px-4 md:px-8 py-8 md:py-16 bg-gray-50">
+            <div class="trust flex flex-wrap md:flex-nowrap justify-center items-center gap-y-8 gap-x-4 lg:gap-x-12">
+
+                <div class="trust-item w-full sm:w-[45%] md:w-[20%] text-center">
+                    <img src="images/Group 42047.png" alt="Trust Image 1"
+                        class="w-[29px] h-[29px] mx-auto animate-ping">
+                </div>
+
+                <div class="trust-item w-full sm:w-[90%] md:w-[45%] text-center md:text-left">
+                    <h1 class="text-2xl sm:text-3xl md:text-[38px] font-bold leading-tight md:leading-[50px]">
+                        Building Trust through <br>
+                        <span class="text-[#FF4D3D]">Credentials</span>
+                    </h1>
+                    <p class="text-[16px] sm:text-[18px] text-[#545D69] leading-[23.4px] mt-4">
+                        Embrace Equence and embark on a journey of <br> successful campaigns and high-revenue marketing.
+                    </p>
+                </div>
+
+                <div class="trust-item w-full sm:w-[45%] md:w-[20%] text-center">
+                    <img src="images/Group42028.png" alt="Trust Image 2" class="w-[135px] h-[163px] mx-auto">
+                </div>
+
+                <div class="trust-item w-full sm:w-[45%] md:w-[15%] text-center">
+                    <button
+                        class="bg-[#5B6BD5] px-6 py-3 rounded-full text-white w-full sm:w-auto transform transition-transform duration-300 hover:scale-105">
+                        Know More
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Trust -->
+
+
+        <!-- Curve
+        <div class="bg-white">
+            <img src="images\BGGrain.png" alt="">
+        </div> -->
+
+        <!-- Counter Section -->
+        <div class="counter bg-[#ECF0F7] px-4 md:px-8 bg-contain bg-center bg-no-repeat"
+            style="background-image: url('images/Asset2.png');">
+            <div class="flex flex-wrap justify-evenly items-center md:py-16 w-full" style="height: 400px;">
+
+                <!-- First Column -->
+                <div class="counter-item w-full sm:w-[30%] md:w-[20%] text-center pb-8">
+                    <h1
+                        class="text-[#FF4D3D] text-2xl sm:text-3xl md:text-[38px] font-bold leading-tight md:leading-[50px]">
+                        40 Million
+                    </h1>
+                    <p class="text-[16px] sm:text-[18px] text-[#545D69]">Unique Customer Connections</p>
+                </div>
+
+                <!-- Second Column with Image -->
+                <div class="counter-item w-full sm:w-[30%] md:w-[20%] text-center p-8">
+                    <h1
+                        class="text-[#FF4D3D] text-2xl sm:text-3xl md:text-[38px] font-bold leading-tight md:leading-[50px]">
+                        800+
+                    </h1>
+                    <p class="text-[16px] sm:text-[18px] text-[#545D69]">Brands</p>
+                </div>
+
+                <!-- Third Column -->
+                <div class="counter-item w-full sm:w-[30%] md:w-[20%] text-center pb-8">
+                    <h1
+                        class="text-[#FF4D3D] text-2xl sm:text-3xl md:text-[38px] font-bold leading-tight md:leading-[50px]">
+                        100%
+                    </h1>
+                    <p class="text-[16px] sm:text-[18px] text-[#545D69]">Brand Retention</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Counter -->
+
+
+
+        <!-- Sector section -->
+        <div class="sector px-4 md:px-6 py-8" data-aos="fade-up"
+        data-aos-duration="1000">
+
+            <!-- Container for consistent width across the section -->
+            <div class="max-w-screen-xl mx-auto">
+
+                <!-- Heading & Content Section -->
+                <div class="flex flex-col md:flex-row items-center justify-around md:space-x-8">
+
+                    <!-- Image (centered on all screen sizes) -->
+                    <div class="w-full md:w-1/3 mb-8 md:mb-0 flex justify-start">
+                        <img src="images\Group.png" class="animate-spin" alt="">
+                    </div>
+
+                    <!-- Text Content (centered on all screens) -->
+                    <div class="text-center space-y-4 w-full md:w-full">
+
+                        <h1 class="text-3xl md:text-[38px] font-bold leading-tight md:leading-[50px]">
+                            Personalize Communication Across
+                            <span class="text-[#FF4D3D]">All Sectors</span>
+                        </h1>
+
+                        <p class="text-[18px] text-[#545D69] leading-[23.4px]">
+                            As every industry is customer-centric, we empower your business to streamline workflow and
+                            tailor solutions that foster strong user engagement and adoption.
+                        </p>
+
+                        <!-- <img src="images\Vector16.png" alt="" class="absolute bottom-0 right-0"> -->
+                    </div>
+
+                </div>
+
+                <!-- Cards Section -->
+                <div class="cards mt-12 justify-around">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-0">
+
+                        <div class="flex justify-around">
+                            <img src="images\Group41250.png" alt="" class="w-[485px] h-[375px]">
+                        </div>
+
+                        <div class="flex justify-center">
+                            <img src="images\Group41249.png" alt="" class="w-[485px] h-[375px]">
+                        </div>
+
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 mt-8">
+
+                        <div class="flex justify-center">
+                            <img src="images\Group41229.png" alt="" class="w-[485px] h-[375px]">
+                        </div>
+
+                        <div class="flex justify-center">
+                            <img src="images\Group41230.png" alt="" class="w-[485px] h-[375px]">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> <!-- End of max-w-screen-xl container -->
+
+        </div>
+        <!-- End -->
+
+
+
+
+
+
+
+
+        <!-- Slider Section -->
+        <div class="slider container mx-auto my-8 px-4">
+            <!-- Title -->
+            <div class="solution text-center mb-6">
+                <h1 class="text-3xl md:text-4xl font-bold leading-tight md:leading-[50px]">Testimonials</h1>
+            </div>
+
+            <!-- Swiper Container -->
+            <div
+                class="swiper relative py-6 px-4 rounded-lg shadow-lg bg-[url('images/Frame330.png')] bg-cover bg-no-repeat bg-center max-w-[1080px] mx-auto">
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide flex justify-center">
+                        <img src="images/Group42049.png" alt="Slide 1" class="w-full h-auto rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide flex justify-center">
+                        <img src="images/Group42049.png" alt="Slide 2" class="w-full h-auto rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide flex justify-center">
+                        <img src="images/Group42049.png" alt="Slide 3" class="w-full h-auto rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Client Details -->
+
+
+        <div class="client_details justify-center">
+
+
+            <div>
+                <h1 class="text-3xl md:text-[38px] font-bold leading-tight md:leading-[50px] text-center py-4">
+                    Client
+                    <span class="text-[#FF4D3D]">Wins</span>
+                </h1>
+            </div>
+
+            <!-- Tabs and Content Section -->
+            <div class="flex flex-col justify-center items-center gap-8">
+
+                <!-- Horizontal Tabs -->
+                <div class="w-full lg:w-2/4 flex justify-center space-x-4 mb-6" id="horizontal-tabs">
+                    <button
+                        class="horizontal-tab-button w-auto px-6 py-3 rounded-full hover:bg-[#5B6BD5] bg-[#F5F9FF] hover:text-white focus:outline-none focus:bg-[#5B6BD5] focus:text-white active"
+                        onclick="openHorizontalTab(event, 'horizontal-tab-1')">
+                        Connect and Heal
+                    </button>
+                    <button
+                        class="horizontal-tab-button w-auto px-6 py-3 rounded-full hover:bg-[#5B6BD5] bg-[#F5F9FF] hover:text-white focus:outline-none focus:bg-[#5B6BD5] focus:text-white"
+                        onclick="openHorizontalTab(event, 'horizontal-tab-2')">
+                        Mahindra
+                    </button>
+                    <button
+                        class="horizontal-tab-button w-auto px-6 py-3 rounded-full hover:bg-[#5B6BD5] bg-[#F5F9FF] hover:text-white focus:outline-none focus:bg-[#5B6BD5] focus:text-white"
+                        onclick="openHorizontalTab(event, 'horizontal-tab-3')">
+                        ICICI Bank
+                    </button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="w-full lg:w-3/4 p-5" id="horizontal-tab-content">
+                    <!-- Content for Tabs -->
+                    <div id="horizontal-tab-1"
+                        class="flex flex-wrap justify-between horizontal-tab-content horizontal-tab-content-1">
+                        <div class="w-full lg:w-1/2 mb-4 lg:mb-0">
+                            <img src="images/download1.png" alt="" class="h-[27px] w-[133px] mb-4">
+
+                            <h3 class="text-[24px] font-semibold">Connect & Heal</h3>
+
+                            <p class="text-[21px] font-light text-left leading-relaxed">We wanted to bring about a
+                                change <br> in our customer’s health and how <br> they can keep track of their health.
+                                <br> With Equence’s help, we were able <br> to build a patient-centric work <br> model
+                                that helped us and our <br> customers have a win-win situation.</p>
+                        </div>
+
+                        <div class="w-full lg:w-1/2 flex justify-center">
+                            <img src="images/Group49.png" class="max-w-full h-auto" alt="">
+                        </div>
+                    </div>
+
+                    <div id="horizontal-tab-2"
+                        class="flex flex-wrap justify-between horizontal-tab-content horizontal-tab-content-2 hidden">
+                        <div class="w-full lg:w-1/2 mb-4 lg:mb-0">
+                            <img src="images/download1.png" alt="" class="h-[27px] w-[133px] mb-4">
+
+                            <h3 class="text-[24px] font-semibold">Connect & Heal</h3>
+
+                            <p class="text-[21px] font-light text-left leading-relaxed">We wanted to bring about a
+                                change <br> in our customer’s health and how <br> they can keep track of their health.
+                                <br> With Equence’s help, we were able <br> to build a patient-centric work <br> model
+                                that helped us and our <br> customers have a win-win situation.</p>
+                        </div>
+
+                        <div class="w-full lg:w-1/2 flex justify-center">
+                            <img src="images/Group49.png" class="max-w-full h-auto" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div id="horizontal-tab-3"
+                        class="flex flex-wrap justify-between horizontal-tab-content horizontal-tab-content-3 hidden">
+                        <div class="w-full lg:w-1/2 mb-4 lg:mb-0">
+                            <img src="images/download1.png" alt="" class="h-[27px] w-[133px] mb-4">
+
+                            <h3 class="text-[24px] font-semibold">Connect & Heal</h3>
+
+                            <p class="text-[21px] font-light text-left leading-relaxed">We wanted to bring about a
+                                change <br> in our customer’s health and how <br> they can keep track of their health.
+                                <br> With Equence’s help, we were able <br> to build a patient-centric work <br> model
+                                that helped us and our <br> customers have a win-win situation.</p>
+                        </div>
+
+                        <div class="w-full lg:w-1/2 flex justify-center">
+                            <img src="images/Group49.png" class="max-w-full h-auto" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- End Client Details -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- CTA Section -->
+        <div class="container mx-auto px-6 md:px-12 py-12 md:py-32">
+            <div class="bg-[#5B6BD5] w-full px-6 md:px-12 py-12 md:py-24 space-y-8 rounded-md" data-aos="fade-up"
+                data-aos-duration="1000">
+
+                <!-- Heading -->
+                <h1
+                    class="text-3xl text-white text-center font-Mona md:text-[34px] font-bold leading-tight md:leading-[50px]">
+                    Experience the Power of Uninterrupted and <br> Insightful Communications Today with Equence
+                </h1>
+
+                <!-- Subtext -->
+                <p class="font-OpenSans text-white text-center text-lg md:text-[18px] font-normal leading-[23.4px]">
+                    Built for your business. Sign up and Stay Competitive
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex justify-center items-center">
+                    <div class="font-Opensans flex flex-col md:flex-row items-center space-y-4 md:space-x-4">
+                        <button
+                            class="bg-white text-[#5B6BD5] text-[16px] px-8 py-4 rounded-full font-bold w-full md:w-auto transform transition-transform duration-300 hover:scale-105">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End CTA Section -->
+
+
+
+
+        <!-- Preloader -->
+        <div id="preloader" class="fixed inset-0 bg-white flex justify-center items-center z-50">
+            <div class="loader"></div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <?php include 'includes/footer.php'; ?>
+    <script src="js\index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
