@@ -19,7 +19,59 @@
 </head>
 
 <body>
-    <?php include 'includes/header.php'; ?>
+
+    <!-- header-->
+
+    <header class=" text-[#131313] font-sans font-medium">
+        <div class="container mx-auto flex justify-around items-center p-4">
+            <!-- Logo -->
+            <a href="" class="text-2xl font-bold"><img src="images\15197975758662.png" class="h-[35px] w-[140px]"
+                    alt=""></a>
+
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="http://localhost/figmadesign/index.php"
+                    class="hover:text-white hover:bg-[#5B6BD5] px-5 py-2 rounded-full">Home</a>
+                <a href="http://localhost/figmadesign/index.php"
+                    class="hover:text-white hover:bg-[#5B6BD5] px-5 py-2 rounded-full">Product</a>
+                <a href="http://localhost/figmadesign/index.php"
+                    class="hover:text-white hover:bg-[#5B6BD5] px-5 py-2 rounded-full">Solutions</a>
+                <a href="http://localhost/figmadesign/index.php"
+                    class="hover:text-white hover:bg-[#5B6BD5] px-5 py-2 rounded-full">Company</a>
+                <a href="http://localhost/figmadesign/index.php"
+                    class="hover:text-white hover:bg-[#5B6BD5] px-5 py-2 rounded-full">Resources</a>
+                <a href="http://localhost/figmadesign/index.php"
+                    class="hover:text-white hover:bg-[#5B6BD5] px-5 py-2 rounded-full">Contact Us</a>
+            </nav>
+
+            <!-- Mobile Menu Icon -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="menu" class="hidden md:hidden bg-[#5B6BD5] text-white font-sans">
+            <a href="http://localhost/figmadesign/index.php" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="http://localhost/figmadesign/index.php" class="block px-4 py-2 hover:bg-gray-700">Product</a>
+            <a href="http://localhost/figmadesign/index.php" class="block px-4 py-2 hover:bg-gray-700">Solutions</a>
+            <a href="http://localhost/figmadesign/index.php" class="block px-4 py-2 hover:bg-gray-700">Company</a>
+            <a href="http://localhost/figmadesign/index.php" class="block px-4 py-2 hover:bg-gray-700">Resources</a>
+            <a href="http://localhost/figmadesign/index.php" class="block px-4 py-2 hover:bg-gray-700">Contact Us</a>
+        </div>
+    </header>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
     <div class="container font-Mona Sans max-w-full tracking-wide">
 
@@ -164,8 +216,8 @@
                 </div>
 
                 <!-- Tab Content -->
-                <div class="w-full lg:w-2/4 p-2 bg-contain bg-center bg-[url('images/Frame330.png')] bg-no-repeat" data-aos="fade-up"
-                data-aos-duration="1000">
+                <div class="w-full lg:w-2/4 p-2 bg-contain bg-center bg-[url('images/Frame330.png')] bg-no-repeat"
+                    data-aos="fade-up" data-aos-duration="1000">
                     <!-- Content for Tabs -->
                     <div class="tab-content tab-content-1">
                         <img src="images/Group41992.png" class="mx-auto h-[300px] md:h-[400px] lg:h-[575px] w-auto"
@@ -207,8 +259,7 @@
 
 
         <!-- Client Section -->
-        <div class="container mx-auto px-6 md:px-12 py-12 md:py-32" data-aos="fade-in"
-        data-aos-duration="1000">
+        <div class="container mx-auto px-6 md:px-12 py-12 md:py-32" data-aos="fade-in" data-aos-duration="1000">
             <!-- Heading -->
             <div class="text-center mb-8">
                 <h1 class="text-3xl text-[#FF4D3D] md:text-[38px] font-bold leading-tight md:leading-[50px]">
@@ -314,8 +365,7 @@
 
 
         <!-- Sector section -->
-        <div class="sector px-4 md:px-6 py-8" data-aos="fade-up"
-        data-aos-duration="1000">
+        <div class="sector px-4 md:px-6 py-8" data-aos="fade-up" data-aos-duration="1000">
 
             <!-- Container for consistent width across the section -->
             <div class="max-w-screen-xl mx-auto">
@@ -466,7 +516,8 @@
                             <p class="text-[21px] font-light text-left leading-relaxed">We wanted to bring about a
                                 change <br> in our customer’s health and how <br> they can keep track of their health.
                                 <br> With Equence’s help, we were able <br> to build a patient-centric work <br> model
-                                that helped us and our <br> customers have a win-win situation.</p>
+                                that helped us and our <br> customers have a win-win situation.
+                            </p>
                         </div>
 
                         <div class="w-full lg:w-1/2 flex justify-center">
@@ -484,7 +535,8 @@
                             <p class="text-[21px] font-light text-left leading-relaxed">We wanted to bring about a
                                 change <br> in our customer’s health and how <br> they can keep track of their health.
                                 <br> With Equence’s help, we were able <br> to build a patient-centric work <br> model
-                                that helped us and our <br> customers have a win-win situation.</p>
+                                that helped us and our <br> customers have a win-win situation.
+                            </p>
                         </div>
 
                         <div class="w-full lg:w-1/2 flex justify-center">
@@ -504,7 +556,8 @@
                             <p class="text-[21px] font-light text-left leading-relaxed">We wanted to bring about a
                                 change <br> in our customer’s health and how <br> they can keep track of their health.
                                 <br> With Equence’s help, we were able <br> to build a patient-centric work <br> model
-                                that helped us and our <br> customers have a win-win situation.</p>
+                                that helped us and our <br> customers have a win-win situation.
+                            </p>
                         </div>
 
                         <div class="w-full lg:w-1/2 flex justify-center">
@@ -588,7 +641,59 @@
 
 
 
-    <?php include 'includes/footer.php'; ?>
+    <!-- footer -->
+
+    <footer class="bg-[#21263F] text-white">
+        <div class="container mx-auto px-4 py-8">
+            <!-- Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-white md:space-y-5">
+
+
+                <!-- Navigation Links -->
+                <div>
+
+                    <nav class="mt-2 md:space-x-8 space-y-2 md:flex text-center md:text-start">
+                        <a href="#" class="block text-white">Menu</a>
+                        <a href="#" class="block text-white">Menu</a>
+                        <a href="#" class="block text-white">Menu</a>
+                        <a href="#" class="block text-white">Menu</a>
+                    </nav>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+
+                    <div class="flex space-x-4 mt-2 justify-center md:justify-end">
+                        <a href="#" class="">
+                            <img src="images\facebook.png" class="w-[44px] h-[44px] hover:scale-50" alt="">
+                        </a>
+                        <a href="#" class="">
+                            <img src="images\linkedin.png" class="w-[44px] h-[44px] hover:scale-50" alt="">
+                        </a>
+                        <a href="#" class="">
+                            <img src="images\play.png" class="w-[44px] h-[44px] hover:scale-50" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-[#535353] border-[1px] my-8">
+
+            <!-- Copyright -->
+            <div class="md:flex justify-between">
+
+                <div class="mt-8 text-center md:text-start text-sm text-white">
+                    &copy; 2023 equence.
+                </div>
+
+                <div class="mt-8 text-center md:text-end text-sm text-white">
+                    All Rights Reserved
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
     <script src="js\index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
